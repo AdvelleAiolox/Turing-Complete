@@ -114,3 +114,23 @@ Turing Complete solution
 奇数真为真
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Odd%20Number%20of%20Signals.JPG)
+
+Counting Signals
+
+计数器
+
+统计输入信号的为真的数量
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Counting%20Signals.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Counting%20Signals_124.JPG)
+
+电路解释
+
+红色圈1判断是否为奇数，激活1项
+
+红色圈4判断是否为4，激活4项
+
+蓝色圈判断是否大于等于2且不为4，激活2项
+
+
