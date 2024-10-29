@@ -1,7 +1,7 @@
 # Turing-Complete
 Turing Complete solution
 
-图灵完备，从NAND开始构建CPU
+图灵完备，从与非门开始构建CPU
 
 [Basic Logic 基本逻辑门](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#Basic-Logic)
 
@@ -19,7 +19,7 @@ Turing Complete solution
 
 **NAND Gate**
 
-谢费尔竖线，Not AND，不全是即非
+与非门，Not AND，不全是即非
 
 点左侧输入改变输入内容，观察输出并填写
 
