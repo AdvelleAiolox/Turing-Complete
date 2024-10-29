@@ -88,5 +88,16 @@ XOR Gate
 
 ## Arithmetic
 
+Binary Racer
 
+你有八个二进制位，并可以切换每个位的01值
+
+系统会给出随机一个数，你需要切换对应位的01值使得二进制所表达的数值与之前给定的随机数一致
+
+
+Double Trouble
+
+大于等于两个真即为真
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Double%20Trouble.JPG）
 
