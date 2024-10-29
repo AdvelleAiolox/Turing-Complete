@@ -147,4 +147,4 @@ SUM输出此位答案，CAR输出是否进位
 
 不考虑溢出，对输入数据进行乘二操作
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Half%20Adder.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Double%20the%20Number.JPG)
