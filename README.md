@@ -26,3 +26,5 @@ Turing Complete solution
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Bigger%20OR%20Gate.JPG)
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Bigger%20AND%20Gate.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/XNOR%20Gate.JPG)
