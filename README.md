@@ -340,3 +340,9 @@ SUM输出此位答案，CAR输出是否进位
 ##Programming
 
 ##CPU Architecture 2
+
+**Conditionals**
+
+添加判断语句
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Conditionals.JPG)
