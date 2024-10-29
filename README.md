@@ -3,10 +3,11 @@ Turing Complete solution
 
 图灵完备，从NAND开始构建CPU
 
-[基本逻辑门](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#basic-logic)
+[Basic Logic 基本逻辑门](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#Basic-Logic)
 
-[运算器](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#Arithmetic)
+[Arithmetic 运算器](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#Arithmetic)
 
+[Memory 存储器](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#Memory)
 
 ## Basic Logic
 
@@ -148,3 +149,29 @@ SUM输出此位答案，CAR输出是否进位
 不考虑溢出，对输入数据进行乘二操作
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Double%20the%20Number.JPG)
+
+**Full Adder**
+
+三输入单位加数器
+
+SUM输出此位答案，CAR输出是否进位
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Full%20Adder.JPG)
+
+## Memory
+
+**Circular Dependency**
+
+循环
+
+需要用两个及以上的元件构成循环电路
+
+任意两个元件首尾相连并构成环即可
+
+**Delayed Lines**
+
+延迟
+
+延迟两次之后依据输入顺序输出
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Delayed%20Lines.JPG)
