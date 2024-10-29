@@ -115,7 +115,7 @@ Turing Complete solution
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Odd%20Number%20of%20Signals.JPG)
 
-Counting Signals
+**Counting Signals**
 
 计数器
 
@@ -131,6 +131,20 @@ Counting Signals
 
 红色圈4判断是否为4，激活4项
 
-蓝色圈判断是否大于等于2且不为4，激活2项
+蓝色圈2判断是否大于等于2且不为4，激活2项
 
+**Half Adder**
 
+单位加数器
+
+SUM输出此位答案，CAR输出是否进位
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Half%20Adder.JPG)
+
+**Double the Number**
+
+八位翻倍器
+
+不考虑溢出，对输入数据进行乘二操作
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Half%20Adder.JPG)
