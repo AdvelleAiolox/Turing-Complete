@@ -175,3 +175,14 @@ SUM输出此位答案，CAR输出是否进位
 延迟两次之后依据输入顺序输出
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Delayed%20Lines.JPG)
+
+**Odd Ticks**
+
+奇偶计数器
+
+在奇数轮为假，在偶数轮为真
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Odd%20Ticks.JPG)
+
+注意上方延迟器有反转，输入为右端，输出为左端
+
