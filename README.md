@@ -227,6 +227,8 @@ SUM输出此位答案，CAR输出是否进位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Logic%20Engine.JPG)
 
+上中下分为逻辑选择部分，取或部分，取与部分
+
 ## Memory
 
 **Circular Dependency**
@@ -316,6 +318,8 @@ SUM输出此位答案，CAR输出是否进位
 本题使用空间极其有限
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Little%20Box.JPG)
+
+与门列用于选择存储器，左侧开关列为对应存储器是否输出的触发，右侧开关列为对应存储器是否保存的触发
 
 **Counter**
 
