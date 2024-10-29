@@ -158,6 +158,14 @@ SUM输出此位答案，CAR输出是否进位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Full%20Adder.JPG)
 
+**Byte OR**
+
+字节或
+
+输入两个字节，对各个位进行或运算
+
+
+
 ## Memory
 
 **Circular Dependency**
