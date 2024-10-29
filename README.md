@@ -244,3 +244,33 @@ SUM输出此位答案，CAR输出是否进位
 选择位为假代表选择输出输入1，选择位为真代表选择输出输入位2
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Input%20Selector.JPG)
+
+**The Bus**
+
+汇流
+
+有两个选择位，及两个输入，第一个选择位代表选择的数据来自哪个输入，假代表输入1，真代表输入2
+
+第二个选择位代表数据以哪个输出口输出，假代表选择输出1，真代表选择输出2
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/The%20Bus.JPG)
+
+**Saving Gracefully**
+
+单位存储器
+
+有一个选择位及一个单位输入，若选择位为假，不保存输入数据，若选择位为真，保存输入数据
+
+输出始终为存储器内数据
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Saving%20Gracefully.JPG)
+
+**Saving Bytes**
+
+字节存储器
+
+有一个选择位及一个字节输入，若选择位为假，不保存输入数据，若选择位为真，保存输入数据
+
+输出始终为存储器内数据
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Saving%20Bytes.JPG)
