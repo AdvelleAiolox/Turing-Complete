@@ -5,26 +5,32 @@ Turing Complete solution
 
 ## Basic Logic
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Crude%20Awakening.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/Crude%20Awakening.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/NAND%20Gate.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/NAND%20Gate.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/NOT%20Gate.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/NOT%20Gate.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/AND%20Gate.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/AND%20Gate.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/NOR%20Gate.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/NOR%20Gate.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/OR%20Gate.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/OR%20Gate.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Always%20On.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/Always%20On.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Second%20Tick.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/Second%20Tick.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/XOR%20Gate.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/XOR%20Gate.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Bigger%20OR%20Gate.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/Bigger%20OR%20Gate.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Bigger%20AND%20Gate.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/Bigger%20AND%20Gate.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/XNOR%20Gate.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/XNOR%20Gate.JPG)
+
+
+## Arithmetic
+
+
+
