@@ -195,6 +195,22 @@ SUM输出此位答案，CAR输出是否进位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Signed%20Negator.JPG)
 
+**1 Bit Decoder**
+
+单位解码器
+
+输入假，选择输出1，输入真，选择输出2
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/1%20Bit%20Decoder.JPG)
+
+**3 Bit Decoder**
+
+三位解码器
+
+以三位二进制数来看输入，选择对应的输出
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/3%20Bit%20Decoder.JPG)
+
 ## Memory
 
 **Circular Dependency**
