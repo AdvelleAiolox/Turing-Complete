@@ -180,7 +180,7 @@ SUM输出此位答案，CAR输出是否进位
 
 输入一个进位符和两个字节，对其进行加法运算，若有进位溢出，则输出进位符为真，否则为假
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Adding%20Bytes.JPG）
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Adding%20Bytes.JPG)
 
 ## Memory
 
