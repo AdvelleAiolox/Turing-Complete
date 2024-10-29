@@ -164,7 +164,23 @@ SUM输出此位答案，CAR输出是否进位
 
 输入两个字节，对各个位进行或运算
 
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Byte%20OR.JPG)
 
+**Byte NOT**
+
+字节非
+
+输入一个字节，对各个位进行非运算
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Byte%20NOT.JPG)
+
+**Adding Bytes**
+
+字节加数器
+
+输入一个进位符和两个字节，对其进行加法运算，若有进位溢出，则输出进位符为真，否则为假
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Adding%20Bytes.JPG）
 
 ## Memory
 
