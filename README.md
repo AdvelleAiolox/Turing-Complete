@@ -186,3 +186,16 @@ SUM输出此位答案，CAR输出是否进位
 
 注意上方延迟器有反转，输入为右端，输出为左端
 
+**Bit Switch**
+
+同异或，但是只有两个非门和两个开关
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Bit%20Switch.JPG)
+
+**Bit Inverter**
+
+位反转器
+
+输入1为需做反转的数，输入2为是否需要反转
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Bit%20Inverter.JPG)
