@@ -290,3 +290,23 @@ SUM输出此位答案，CAR输出是否进位
 输出始终为存储器内数据
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Saving%20Bytes.JPG)
+
+**Little Box**
+
+存储器选择
+
+有四个选择位以及一个输入值，选择位分别代表是否要输出，是否要保存，后两位表示存储器的选择，第三位代表存储器编号第一位A或B，第四位代表存储器编号第二位0或1
+
+本题使用空间极其有限
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Little%20Box.JPG)
+
+**Counter**
+
+计数器
+
+有一个选择位及一个输入值，选择位为假，代表计数器加一，选择位为真，用输入值覆盖计数器的值
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Counter.JPG)
+
+
