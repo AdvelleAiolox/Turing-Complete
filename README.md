@@ -335,11 +335,11 @@ SUM输出此位答案，CAR输出是否进位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Counter.JPG)
 
-##CPU Architecture
+## CPU Architecture
 
-##Programming
+## Programming
 
-##CPU Architecture 2
+## CPU Architecture 2
 
 **Conditionals**
 
