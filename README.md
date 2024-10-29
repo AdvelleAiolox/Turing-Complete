@@ -211,6 +211,22 @@ SUM输出此位答案，CAR输出是否进位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/3%20Bit%20Decoder.JPG)
 
+**Logic Engine**
+
+逻辑引擎
+
+有三个输入，第一个输入转化为二进制后由最低位控制逻辑操作的选项，后两个输入代表输入1和输入2
+
+当逻辑控制符为00时，输出输入1与输入2取或之后的答案
+
+当逻辑控制符为01时，输出输入1与输入2取与非之后的答案
+
+当逻辑控制符为10时，输出输入1与输入2取或非之后的答案
+
+当逻辑控制符为11时，输出输入1与输入2取与之后的答案
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Logic%20Engine.JPG)
+
 ## Memory
 
 **Circular Dependency**
@@ -231,7 +247,7 @@ SUM输出此位答案，CAR输出是否进位
 
 **Odd Ticks**
 
-奇偶计数器
+奇偶判断器
 
 在奇数轮为假，在偶数轮为真
 
