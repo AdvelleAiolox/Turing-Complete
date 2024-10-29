@@ -9,6 +9,12 @@ Turing Complete solution
 
 [Memory 存储器](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#Memory)
 
+[CPU Architecture CPU架构](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#CPU-Architecture)
+
+[Programming 编程](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#Programming)
+
+[CPU Architecture 2 CPU架构2](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#CPU-Architecture-2)
+
 ## Basic Logic
 
 **Crude Awakening**
@@ -329,4 +335,8 @@ SUM输出此位答案，CAR输出是否进位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Counter.JPG)
 
+##CPU Architecture
 
+##Programming
+
+##CPU Architecture 2
