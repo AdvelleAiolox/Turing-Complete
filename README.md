@@ -182,6 +182,19 @@ SUM输出此位答案，CAR输出是否进位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Adding%20Bytes.JPG)
 
+**Negative Numbers**
+
+你有八个二进制位，并可以切换每个位的01值，但这次最高位不代表128而是代表-128
+
+系统会给出随机一个数，你需要切换对应位的01值使得二进制所表达的数值与之前给定的随机数一致
+
+
+**Signed Negator**
+
+有符号数取负
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Arithmetic/Signed%20Negator.JPG)
+
 ## Memory
 
 **Circular Dependency**
@@ -223,3 +236,11 @@ SUM输出此位答案，CAR输出是否进位
 输入1为需做反转的数，输入2为是否需要反转
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Bit%20Inverter.JPG)
+
+**Input Selector**
+
+输入选择器
+
+选择位为假代表选择输出输入1，选择位为真代表选择输出输入位2
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Input%20Selector.JPG)
