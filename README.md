@@ -485,6 +485,28 @@ SUM输出此位答案，CAR输出是否进位
 
 ## Programming
 
+**Add 5**
+
+加五
+
+更改程序框中的数据，达到给输入的数加5并输出的效果
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/ADD%205.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/ADD%205%201.JPG)
+
+5，00000101，代表即时操作，将数值直接存储到寄存器0中
+
+129，100000001，代表复制操作，将寄存器0中的数据复制到寄存器1中
+
+178，10110010，代表复制操作，将输入中的数值存储到寄存器2中
+
+68，01000100，代表运算，加操作，将寄存器1和寄存器2的数值相加，将答案存储到寄存器3中
+
+158，10011110，代表复制操作，将寄存器3中的数值输出到输出中
+
+****
+
 ## CPU Architecture 2
 
 **Conditionals**
