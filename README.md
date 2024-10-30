@@ -375,6 +375,27 @@ SUM输出此位答案，CAR输出是否进位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Registers.JPG)
 
+**Component Factory**
+
+元件工厂
+
+本关卡不是一个关卡，只是可以开放自定义元件功能
+
+元件按空格可以旋转，在一个方格块中只能有一个输入或者输出，否则会出现错误
+
+**Calculations**
+
+计算模块
+
+在寄存器的基础上添加计算模块
+
+输入字节的最高两位代表操作种类，其中00代表直接操作，01代表计算，10代表复制，11代表判断
+
+此关卡只考虑复制和计算操作，复制操作同寄存器关卡，计算操作时，由从低位起1，2，3位代表操作类型，可直接利用之前的算数引擎
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Calculations.JPG)
+
+其中ALU元件为之前绘制的算数引擎
 
 ## Programming
 
