@@ -597,6 +597,84 @@ SUM输出此位答案，CAR输出是否进位
 
 ## CPU Architecture 2
 
+**XOR**
+
+异或
+
+本关卡通过编写程序达成
+
+输入两个数，输出两个输入数值进行异或操作后的结果
+
+在不能改变电路的情况下，考虑使用其他方式获得异或运算值，异或运算值也等于或运算的值减去与运算的值
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/XOR.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/XOR%201.JPG)
+
+**Byte Constant**
+
+字节固定值
+
+直接用电源激活8位转换器对应的位
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Byte%20Constant.JPG)
+
+其他数值只需要改变用电源激活的位置即可
+
+**Byte XOR**
+
+字节异或
+
+输入两个字节，对各个位进行异或运算
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Byte%20XOR.JPG)
+
+**Equality**
+
+等于
+
+输入两个字节，对各个位进行同或运算，若所有位均为真则代表相等，否则则为不相等
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Equality.JPG)
+
+**Unsigned Less**
+
+无符号小于
+
+输入两个无符号字节（最高位代表+128），若输入1小于输入2，为真，否则为假
+
+首先判断最高位的值，如果输入1最高位为0，输入2最高位为1，直接输出真
+
+否则，看最高位的值是否相同，不相同为假
+
+若相同时，对输入1进行取负操作（无符号也可取负，只是数值有问题，但不影响结论），将取负后的输入1与未取负的输入2相加，如果等于零，为假，否则，观察答案的最高位（第八位），若此位为假，或者进位符为真，则为真，否则为假
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Unsigned%20Less.JPG)
+
+**Unsigned Less**
+
+有符号小于
+
+输入两个有符号字节（最高位代表-128），若输入1小于输入2，为真，否则为假
+
+首先判断最高位的值，如果输入1最高位为1，输入2最高位为0，直接输出真
+
+否则，看最高位的值是否相同，不相同为假
+
+若相同时，对输入1进行取负操作，将取负后的输入1与未取负的输入2相加，如果等于零，为假，否则，观察答案的最高位（第八位），若此位为假，或者进位符为真，则为真，否则为假
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Signed%20Less.JPG)
+
+**Wide Instructions**
+
+宽指令
+
+每轮都输入一个数，但在奇数轮时存储输入，在偶数轮时输出存储的数据和输入的数据
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Wide%20Instructions.JPG)
+
+用轮数与1进行与操作，若不等于0为奇数轮，进行存储，否则为偶数轮，进行输出
+
 **Conditionals**
 
 添加判断语句
