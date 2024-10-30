@@ -15,6 +15,8 @@ Turing Complete solution
 
 [CPU Architecture 2 CPU架构2](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#CPU-Architecture-2)
 
+[Functions 函数](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/README.md#Functions)
+
 ## Basic Logic
 
 **Crude Awakening**
@@ -600,3 +602,36 @@ SUM输出此位答案，CAR输出是否进位
 添加判断语句
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Conditionals.JPG)
+
+## Functions
+
+**Hex Racer**
+
+二进制转十六进制计算
+
+你有八个二进制位，并可以切换每个位的01值
+
+系统会给出随机一个十六进制数，你需要切换对应位的01值使得二进制所表达的数值与之前给定的随机数一致
+
+十六进制中0-1与十进制相同
+
+大于等于10的数用字母表示
+
+10=A
+
+11=B
+
+12=C
+
+13=D
+
+14=E
+
+15=F
+
+二进制中最高四位代表十六进制中最高的一位，二进制中最低四位代表十六进制中最低的一位
+
+**Shift**
+
+移位
+
