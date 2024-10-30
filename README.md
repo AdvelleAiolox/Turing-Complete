@@ -587,9 +587,9 @@ SUM输出此位答案，CAR输出是否进位
 
 如此重复直到进入门
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/The%20Maze.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/The%20Maze%201.JPG)
 
-![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/The%20Maze.JPG)
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/The%20Maze%202.JPG)
 
 具体代码如上，判断后需要使用跳转（改变计数器数据）
 
