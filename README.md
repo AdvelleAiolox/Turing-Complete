@@ -505,7 +505,91 @@ SUM输出此位答案，CAR输出是否进位
 
 158，10011110，代表复制操作，将寄存器3中的数值输出到输出中
 
-****
+**Calibrating Laser Cannons**
+
+校准激光炮
+
+实际为计算2π乘输入，并且π取3，所以实际为计算输入乘6，也可以理解为六个输入数值累加
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Calibrating%20Laser%20Cannons.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Calibrating%20Laser%20Cannons%201.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Calibrating%20Laser%20Cannons%202.JPG)
+
+此关卡可以解锁操作命名，可以将对应的二进制操作用更容易理解的方式命名，具体操作含义参考之前的定义
+
+**Spacial Invasion**
+
+宇宙入侵
+
+有一张图，里面有一堆可以动的星际老鼠，你可以操控一个机器人来杀掉这些星际老鼠，激光炮发射后如果还没消失就不能发射第二次
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Spacial%20Invasion%203.JPG)
+
+机器人操作指令如图
+
+我重点关注三个，前进（1），等待（3），发射激光炮（5）
+
+实际操作找到最简单的方法是先发射机关炮破坏墙壁，然后前进，知道星际老鼠那行之前，然后开始判断机器人面前是否有老鼠，如果面前有老鼠（33，判断不等于0即可），则发射激光炮，如果没有老鼠（0），则等待（因为老鼠会自己动）
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Spacial%20Invasion.JPG)
+
+这是依据操作暴力执行的程序（程序太长，不放了，一直都是同一个语句）
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Spacial%20Invasion%201.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Spacial%20Invasion%202.JPG)
+
+这个是改进之后的程序，需要程序本身读取输入（机器人面前的物品数据（老鼠33，空白0）），再进行发射或者等待操作
+
+**Storage Cracker**
+
+存储破解器
+
+猜密码，猜高了会给你一个输出1
+
+但是这关没有惩罚，我偷懒暴力从0开始+1输出，反正到了答案会自动停止执行 ：P
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Storage%20Cracker.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Storage%20Cracker.JPG)
+
+**Masking Time**
+
+掩蔽时间
+
+外星人一周只有四天，周零，周一，周二，周三，你要依据输入来看这天是周几
+
+实际就是输入与4取模
+
+但是这关有操作次数限制，不能超过八次，如果用减操作直到小于4是不行的，所以我最后选择用输入与3（二进制11）取与操作保留输入数据二进制的最后两位
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Masking%20Time.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Masking%20Time%201.JPG)
+
+**The Maze**
+
+迷宫
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/The%20Maze.JPG)
+
+走迷宫，空白是0，墙是1，门是3，金币是8
+
+我的策略是，先判断前面是不是门（3）(输入减3是否等于0)，如果是门，进行互动操作（4），进入门
+
+如果不是门，再判断是不是墙（1）（输入减1是否等于0），如果是墙，则右转（2）
+
+如果也不是墙，先前进一步（1），然后立刻左转（0）
+
+如此重复直到进入门
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/The%20Maze.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/The%20Maze.JPG)
+
+具体代码如上，判断后需要使用跳转（改变计数器数据）
 
 ## CPU Architecture 2
 
