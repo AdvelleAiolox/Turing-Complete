@@ -221,7 +221,7 @@ SUM输出此位答案，CAR输出是否进位
 
 逻辑引擎
 
-有三个输入，第一个输入转化为二进制后由最低位控制逻辑操作的选项，后两个输入代表输入1和输入2
+有三个输入，第一个输入转化为二进制后由最低两位控制逻辑操作的选项，后两个输入代表输入1和输入2
 
 当逻辑控制符为00时，输出输入1与输入2取或之后的答案
 
@@ -336,6 +336,45 @@ SUM输出此位答案，CAR输出是否进位
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Counter.JPG)
 
 ## CPU Architecture
+
+**Arithmetic Engine**
+
+算数引擎，在之前的逻辑引擎上加入加和减操作
+
+有三个输入，第一个输入转化为二进制后由最低三位控制操作的选项，后两个输入代表输入1和输入2
+
+当操作控制符为000时，输出输入1与输入2取或之后的答案
+
+当操作控制符为001时，输出输入1与输入2取与非之后的答案
+
+当操作控制符为010时，输出输入1与输入2取或非之后的答案
+
+当操作控制符为011时，输出输入1与输入2取与之后的答案
+
+当操作控制符为100时，输出输入1与输入2加运算之后的答案
+
+当操作控制符为101时，输出输入1与输入2减运算（输入1减去输入2）之后的答案
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Arithmetic%20Engine.JPG)
+
+上部进行操作选择，下部进行操作运算
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Arithmetic%20Engine%20s.JPG)
+
+操作选择简化后版本
+
+**Registers**
+
+寄存器
+
+由程序控制，程序由一个计数器控制，每次读取一字节
+
+一个字节八位，从低位起1，2，3位组合代表选择存储的寄存器地址，4，5，6位代表数据来源的寄存器地址
+
+000代表寄存器0，001代表寄存器1，010代表寄存器2，011代表寄存器3，100代表寄存器4，101代表寄存器5，110在来源代表输入，在存储位置代表输出
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Registers.JPG)
+
 
 ## Programming
 
