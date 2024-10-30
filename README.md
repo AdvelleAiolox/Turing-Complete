@@ -367,7 +367,7 @@ SUM输出此位答案，CAR输出是否进位
 
 寄存器
 
-由程序控制，程序由一个计数器控制，每次读取一字节
+这里原本应该有一个输入，但是我因为做过后面关卡所以输入是一个程序，但电路方面是一样的
 
 一个字节八位，从低位起1，2，3位组合代表选择存储的寄存器地址，4，5，6位代表数据来源的寄存器地址
 
@@ -383,19 +383,83 @@ SUM输出此位答案，CAR输出是否进位
 
 元件按空格可以旋转，在一个方格块中只能有一个输入或者输出，否则会出现错误
 
+**Instruction Decoder**
+
+指令解码器
+
+在有限的范围内绘制指令解码器
+
+输入字节的最高两位代表操作种类，其中00代表即时操作，01代表计算，10代表复制，11代表判断，四个输出代表选中的操作
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Instruction%20Decoder.JPG)
+
 **Calculations**
 
 计算模块
 
 在寄存器的基础上添加计算模块
 
-输入字节的最高两位代表操作种类，其中00代表直接操作，01代表计算，10代表复制，11代表判断
+这里原本应该有一个输入，但是我因为做过后面关卡所以输入是一个程序，但电路方面是一样的
 
-此关卡只考虑复制和计算操作，复制操作同寄存器关卡，计算操作时，由从低位起1，2，3位代表操作类型，可直接利用之前的算数引擎
+可直接利用之前的指令解码器（DEC）
+
+此关卡只考虑复制和计算操作，复制操作同寄存器关卡，计算操作时，由从低位起1，2，3位代表操作类型，可直接利用之前的算数引擎（ALU）
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Calculations.JPG)
 
-其中ALU元件为之前绘制的算数引擎
+需注意短路问题，可添加开关控制
+
+**Conditions**
+
+条件模块
+
+在极其有限的范围内绘制一个条件判断模块
+
+有两个输入，输入1的二进制最低三位代表判断的条件，其中000为常闭，001判断是否等于0，010判断是否小于0，011判断是否小于等于0，100为常通，101判断是否不等于0，110判断是否大于等于0，111判断是否大于0，输出代表判断结论真或假
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Conditions.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Conditions%2001.JPG)
+
+电路解释，红色+-圈用于判断输入2是否小于0，蓝色0圈用于判断除了负位，输入2是否等于0，红色0圈用于判断输入2是否等于0
+
+**Program**
+
+程序
+
+将输入改为由程序控制，程序由一个计数器控制，每次读取一字节
+
+只需要给程序窗口连接计数器，并将计数器设置为1
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Program.JPG)
+
+**Immediate Values**
+
+即时值
+
+在添加了计算模块的寄存器上再次添加即时值模块
+
+可直接利用之前的指令解码器（DEC）
+
+在即时操作时，直接将输入的数值存入寄存器0
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Immediate%20Values.JPG)
+
+也需注意短路问题，可添加开关控制
+
+**Turing Complete**
+
+图灵完备机
+
+在添加了计算模块和即时值模块的寄存器上再次添加条件模块
+
+可直接利用之前的指令解码器（DEC）和条件模块（COND）
+
+在条件操作时，比较寄存器3中的值与0的大小，如果为真，将寄存器0中的值赋予给计数器，使得程序可以跳转到值对应的指令
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Turing%20Complete.JPG)
+
+也需注意短路问题，可添加开关控制
 
 ## Programming
 
