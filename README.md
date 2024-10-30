@@ -615,11 +615,11 @@ SUM输出此位答案，CAR输出是否进位
 
 字节固定值
 
-直接用电源激活8位转换器对应的位
+直接用常通激活8位转换器对应的位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Byte%20Constant.JPG)
 
-其他数值只需要改变用电源激活的位置即可
+其他数值只需要改变用常通激活的位置即可
 
 **Byte XOR**
 
