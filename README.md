@@ -25,7 +25,9 @@ Turing Complete solution
 
 **NAND Gate**
 
-与非门，Not AND，不全是即非
+与非门
+
+Not AND，不全是即非
 
 点左侧输入改变输入内容，观察输出并填写
 
@@ -33,25 +35,33 @@ Turing Complete solution
 
 **NOT Gate**
 
-非门，真即假，假即真
+非门
+
+真即假，假即真
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/NOT%20Gate.JPG)
 
 **AND Gate**
 
-与门，全是即真
+与门
+
+全是即真
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/AND%20Gate.JPG)
 
 **NOR Gate**
 
-或非门，Not OR，全非即真
+或非门
+
+Not OR，全非即真
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/NOR%20Gate.JPG)
 
 **OR Gate**
 
-或门，一真即真
+或门
+
+一真即真
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/OR%20Gate.JPG)
 
@@ -65,7 +75,7 @@ Turing Complete solution
 
 **Second Tick**
 
-仅有输入1时为真
+仅有输入1为真时为真
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/Second%20Tick.JPG)
 
@@ -95,7 +105,9 @@ Turing Complete solution
 
 **XOR Gate**
 
-同或门，相同即真
+同或门
+
+相同即真
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Basic_Logic/XNOR%20Gate.JPG)
 
@@ -103,6 +115,8 @@ Turing Complete solution
 ## Arithmetic
 
 **Binary Racer**
+
+二进制计算
 
 你有八个二进制位，并可以切换每个位的01值
 
@@ -190,6 +204,8 @@ SUM输出此位答案，CAR输出是否进位
 
 **Negative Numbers**
 
+有符号二进制计算
+
 你有八个二进制位，并可以切换每个位的01值，但这次最高位不代表128而是代表-128
 
 系统会给出随机一个数，你需要切换对应位的01值使得二进制所表达的数值与之前给定的随机数一致
@@ -265,7 +281,9 @@ SUM输出此位答案，CAR输出是否进位
 
 **Bit Switch**
 
-同异或，但是只有两个非门和两个开关
+同异或
+
+但是只有两个非门和两个开关
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Memory/Bit%20Switch.JPG)
 
@@ -339,7 +357,9 @@ SUM输出此位答案，CAR输出是否进位
 
 **Arithmetic Engine**
 
-算数引擎，在之前的逻辑引擎上加入加和减操作
+算数引擎
+
+在之前的逻辑引擎上加入加和减操作
 
 有三个输入，第一个输入转化为二进制后由最低三位控制操作的选项，后两个输入代表输入1和输入2
 
@@ -421,7 +441,9 @@ SUM输出此位答案，CAR输出是否进位
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture/Conditions%2001.JPG)
 
-电路解释，红色+-圈用于判断输入2是否小于0，蓝色0圈用于判断除了负位，输入2是否等于0，红色0圈用于判断输入2是否等于0
+电路解释
+
+红色+-圈用于判断输入2是否小于0，蓝色0圈用于判断除了负位，输入2是否等于0，红色0圈用于判断输入2是否等于0
 
 **Program**
 
