@@ -716,3 +716,9 @@ SUM输出此位答案，CAR输出是否进位
 输入两个数，用二进制表示输入1，输入2代表输入1二进制数左移的位数，溢出的位忽视，新增的位均为0，输入2不会大于7
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Functions/Shift.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Functions/Shift%201.JPG)
+
+细节放大
+
+下面与这段类似
