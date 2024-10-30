@@ -525,6 +525,8 @@ SUM输出此位答案，CAR输出是否进位
 
 有一张图，里面有一堆可以动的星际老鼠，你可以操控一个机器人来杀掉这些星际老鼠，激光炮发射后如果还没消失就不能发射第二次
 
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Spacial%20Invasion%204.JPG)
+
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/Programming/Spacial%20Invasion%203.JPG)
 
 机器人操作指令如图
