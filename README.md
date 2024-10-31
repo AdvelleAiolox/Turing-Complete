@@ -675,11 +675,89 @@ SUM输出此位答案，CAR输出是否进位
 
 用轮数与1进行与操作，若不等于0为奇数轮，进行存储，否则为偶数轮，进行输出
 
+**Wire Spaghetti**
+
+电线意面
+
+每次输入四个字节，设定计数器每次加4，第一个代表操作类型（此关都为0，代表加操作），第二个代表输入1的地址，第三个代表输入2的地址，第三个代表存储运算结果的地址
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Wire%20Spaghetti.JPG)
+
+电路解释
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Wire%20Spaghetti%201.JPG)
+
+红色load圈内用控制各个寄存器或者输入的输出选项，任意一项输入的地址指向这里时就可触发寄存器的输出
+
+用或门控制主要是为了防止电流倒流出现问题
+
+out1/2圈内结构如下图
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Wire%20Spaghetti%202.JPG)
+
+这个结构主要是利用开关，将输入1对应的数值和输入2对应的数值分散到两条线中，避免信号混乱
+
+**Opcodes**
+
+操作符
+
+在电线意面的基础上加入不同的运算操作
+
+将第一个字节写作二进制形式，用最低三位表示不同的操作，000代表加操作，001代表减操作，010代表与操作，011代表或操作，100代表非操作，101代表异或操作
+
+其中非操作时，忽略第二个输入地址（第三个字节）
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Opcodes.JPG)
+
+运算模块细节
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Opcodes%201.JPG)
+
+中间的两条横穿蓝线，上面代表输入2，下面代表输入1，最上方的蓝线为结果输出线
+
+具体运算细节和CPU架构章节类似
+
+**Immediate Values**
+
+即时值
+
+在添加了运算模块的电线意面上再加入即时值模块
+
+根据第一个字节写作二进制形式后从最低位起第7，8位控制，若第8位为真，则第二个字节代表的是输入1的值，若第8位为假，则第二个字节代表输入1的地址，若第7位为真，则第三个字节代表的是输入2的值，若第7位为假，则第三个字节代表输入2的地址
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Immediate%20Values.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Immediate%20Values%201.JPG)
+
+即时值模块为红圈内部分
+
+需要用开关控制流向（直接流向输入1，输入2的数据线，或者流向寄存器地址模块）
+
 **Conditionals**
 
-添加判断语句
+条件
+
+添加判断模块
+
+根据第一个字节写作二进制形式后从最低位起第6位控制，如果第六位为假，那么前三位代表运算，如果第六位为真，则前三位代表判断操作
+
+运算类型操作符同之前运算模块，在为判断操作符时，最低三位000代表判断输入1与输入2是否相等，001代表判断输入1与输入2是否不相等，010代表判断输入1是否小于输入2，011代表判断输入1是否小于等于输入2，100代表判断输入1是大于输入2，101代表判断输入1是否大于等于输入2
+
+如果判断结论为真，则将第四字节的数值赋值给计数器，产生跳转效果，如果为假，不操作
 
 ![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Conditionals.JPG)
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Conditionals%202.JPG)
+
+为了更加简洁地设计判断模块，我利用元件工厂先设计了compare模块，如上图
+
+此模块一共有三个输入及三个输出
+
+第一个位输入用于控制模块地开启与关闭，第二三输入为字节输入，为输入1和输入2，用于比较，若输入1小于输入2，则第一个输出为真，若输入1等于输入2，则第二个输出为真，若输入1大于输入2，则第三个输出为真
+
+![image](https://github.com/AdvelleAiolox/Turing-Complete/blob/main/Photos/CPU_Architecture_2/Conditionals%201.JPG)
+
+红圈compare为之前自定义的模块，红箭头input4指第四字节引出的数据线，用于给计数器赋值，红圈cond中为判断模块
 
 ## Functions
 
